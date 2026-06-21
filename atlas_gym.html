@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Gym | Train Your Strength. Elevate Your Life.</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-globe animate-spin-slow"></i>
+                </div>
+                <div class="logo-text-wrap">
+                    <span class="logo-text">ATLAS GYM</span>
+                    <span class="logo-sub">Train your strength. Elevate your life.</span>
+                </div>
+            </div>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#programs">PROGRAMS</a></li>
+                    <li><a href="#facilities">FACILITIES</a></li>
+                    <li><a href="#testimonials">REVIEWS</a></li>
+                    <li><a href="#join">MEMBERSHIP</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="#join" class="btn btn-solid">JOIN NOW</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE DRAWER NAVIGATION -->
+    <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <span class="logo-text" style="font-size: 1.1rem;">ATLAS GYM</span>
+            </div>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#programs">PROGRAMS</a>
+            <a href="#facilities">FACILITIES</a>
+            <a href="#testimonials">REVIEWS</a>
+            <a href="#join">MEMBERSHIP</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <a href="#join" class="btn btn-solid" style="margin-top: auto;">JOIN NOW</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-bolt"></i> Olympus Peak Performance
+                </div>
+                <h1>STRENGTH<br>THAT HOLDS<br><span>THE WORLD.</span></h1>
+                <p>Equip yourself with the discipline, power, and high-performance guidance to bear any load. Train like a titan at Atlas.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#join" class="btn btn-solid">BECOME A MEMBER</a>
+                    <a href="#programs" class="btn btn-outline">VIEW PROGRAMS</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1,200+</span>
+                        <span class="stat-label">Active Titans</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Facility Access</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Elite Coaches</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrap">
+                <div class="hero-image-overlay"></div>
+                <img src="atlas_statue.png" alt="Titan Atlas holding the celestial globe">
+            </div>
+        </div>
+
+        <div class="down-arrow-wrap">
+            <a href="#about"><i class="fa-solid fa-chevron-down down-arrow"></i></a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-image-wrap">
+                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop" alt="Athlete training hard">
+                <div class="about-badge">
+                    <span>10+</span>
+                    <label>Years of<br>Strength</label>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <h2>CHAMPIONS ARE FORGED, NOT BORN</h2>
+                <p>Atlas Gym is a premium high-performance athletic facility engineered for those who demand more from their bodies. We reject standard gym templates to provide a focused, distraction-free environment containing premium Olympic-standard gear, comprehensive recovery configurations, and master coaches.</p>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrap">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>TITAN EQUIPMENT</h4>
+                            <p>Eleiko plates, deadlift platforms, custom-welded steel rigs, and dumbbells up to 150 lbs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon-wrap">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>OLYMPIC COACHING</h4>
+                            <p>Train under competitive weightlifters, biomechanics specialists, and elite nutritionists.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-wrap">
+                            <i class="fa-solid fa-house-chimney-medical"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>RECOVERY SUITE</h4>
+                            <p>Access advanced muscle recovery with cedar saunas, steam rooms, and premium ice plunges.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-wrap">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>TITAN RESULTS</h4>
+                            <p>Structured monthly metabolic assessments and body composition analysis to track growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMS SECTION -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="section-divider">
+                <h2>OUR SCIENTIFIC <span>PROGRAMS</span></h2>
+            </div>
+            
+            <div class="programs-grid">
+                <!-- Program 1 -->
+                <div class="program-card">
+                    <div class="program-img-wrap">
+                        <div class="program-img-overlay"></div>
+                        <div class="program-icon-badge">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop" alt="Cardio interval drill">
+                    </div>
+                    <div class="program-body">
+                        <h3>APOLLO BURNS</h3>
+                        <div class="program-sub">WEIGHT LOSS SYSTEM</div>
+                        <p>Burn body fat, boost cardiovascular endurance, and achieve a highly defined physique through high-intensity circuits.</p>
+                        <div class="program-footer">
+                            <span class="program-meta"><i class="fa-regular fa-clock"></i> 45m / HIIT</span>
+                            <span class="program-btn-learn" data-program="apollo">LEARN MORE <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="program-card">
+                    <div class="program-img-wrap">
+                        <div class="program-img-overlay"></div>
+                        <div class="program-icon-badge">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop" alt="Heavy barbell lift">
+                    </div>
+                    <div class="program-body">
+                        <h3>HERACLES GROWTH</h3>
+                        <div class="program-sub">MUSCLE BUILDING STACK</div>
+                        <p>Build raw muscular power, increase joint stability, and pack on serious size with progressive overload coaching.</p>
+                        <div class="program-footer">
+                            <span class="program-meta"><i class="fa-regular fa-clock"></i> 60m / Strength</span>
+                            <span class="program-btn-learn" data-program="heracles">LEARN MORE <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="program-card">
+                    <div class="program-img-wrap">
+                        <div class="program-img-overlay"></div>
+                        <div class="program-icon-badge">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=800&auto=format&fit=crop" alt="Functional core movement">
+                    </div>
+                    <div class="program-body">
+                        <h3>ARTEMIS FIT</h3>
+                        <div class="program-sub">ATHLETIC TONING</div>
+                        <p>Empower your body with athletic definition, functional strength, posture realignment, and focused core stability.</p>
+                        <div class="program-footer">
+                            <span class="program-meta"><i class="fa-regular fa-clock"></i> 50m / Conditioning</span>
+                            <span class="program-btn-learn" data-program="artemis">LEARN MORE <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACILITIES SECTION -->
+    <section class="facilities" id="facilities">
+        <div class="container">
+            <div class="section-divider">
+                <h2>PREMIUM <span>FACILITIES</span></h2>
+            </div>
+            
+            <div class="facilities-inner">
+                <div class="facilities-sidebar">
+                    <div>
+                        <p class="facilities-desc">Explore our custom-built spaces designed to maximize workout execution and hasten physical recovery. Every zone is meticulously temperature-controlled and maintained to medical grade hygiene standards.</p>
+                        
+                        <div class="facilities-tabs">
+                            <button class="facility-tab-btn active" data-tab="cardio">
+                                <span>CARDIO ZONE</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <button class="facility-tab-btn" data-tab="strength">
+                                <span>OLYMPIC WEIGHTS AREA</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <button class="facility-tab-btn" data-tab="lockers">
+                                <span>LOCKERS & SHOWERS</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <button class="facility-tab-btn" data-tab="recovery">
+                                <span>ARTEMIS RECOVERY SUITE</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="facilities-display">
+                    <!-- Panel 1: Cardio -->
+                    <div class="facility-content-panel active" id="facility-cardio">
+                        <div class="facility-viewer-img">
+                            <div class="facility-stream-tag">
+                                <span></span> LIVE VIEW (CAM 04)
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" alt="Cardio machines line">
+                        </div>
+                        <div class="facility-viewer-body">
+                            <h3>CARDIO PERFORMANCE CENTER</h3>
+                            <p>Maximize your endurance on our commercial-grade cardio arsenal. Features high-end Woodway motorless treadmills, Concept2 rowers, SkiErgs, and Wattbikes configured with digital diagnostics tracking to analyze power output outputs in real-time.</p>
+                            <div class="facility-perks">
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Woodway Curve Treadmills</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Live Diagnostics HUDs</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Concept2 SkiErgs & Rowers</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Oxygenated Air Circulation</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2: Strength -->
+                    <div class="facility-content-panel" id="facility-strength">
+                        <div class="facility-viewer-img">
+                            <div class="facility-stream-tag">
+                                <span></span> LIVE VIEW (CAM 09)
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=800&auto=format&fit=crop" alt="Free weight platforms">
+                        </div>
+                        <div class="facility-viewer-body">
+                            <h3>OLYMPIC STRENGTH YARD</h3>
+                            <p>A hardcore weightlifter's sanctuary. Features certified Eleiko competitive steel plates, multiple deadlift drop platforms, customized steel cages, and heavy-duty specialty bars. Dumbbells range up to 150 lbs in a spacious, rubberized layout.</p>
+                            <div class="facility-perks">
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Eleiko Certified Plates</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> 8 Dedicated Drop Platforms</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Dumbbells up to 150 lbs</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Competition Rigs & Squat Racks</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3: Lockers -->
+                    <div class="facility-content-panel" id="facility-lockers">
+                        <div class="facility-viewer-img">
+                            <div class="facility-stream-tag">
+                                <span></span> LIVE VIEW (CAM 01)
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop" alt="Premium locker facilities">
+                        </div>
+                        <div class="facility-viewer-body">
+                            <h3>LUXURY LOCKER SUITES</h3>
+                            <p>Clean, secure, and fully equipped locker facilities. Offers electronic keycard locks, custom vanity stations with high-power hair dryers, fresh fluffy towel service, and organic botanic shower amenities for post-workout restoration.</p>
+                            <div class="facility-perks">
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Keycard Secure Lockers</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Premium Towel Service</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Organic Body Care Bathing</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Vanity Stations with Tools</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 4: Recovery -->
+                    <div class="facility-content-panel" id="facility-recovery">
+                        <div class="facility-viewer-img">
+                            <div class="facility-stream-tag">
+                                <span></span> LIVE VIEW (CAM 12)
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" alt="Spa and sauna suites">
+                        </div>
+                        <div class="facility-viewer-body">
+                            <h3>ARTEMIS THERMO RECOVERY SUITE</h3>
+                            <p>Optimize physical regeneration. Alternating between thermal extremes is clinically proven to reduce DOMS and systemic inflammation. Features a dry cedarwood sauna, eucalyptus-infused steam chamber, and filtered ice baths chilled to 4°C.</p>
+                            <div class="facility-perks">
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Dry Cedarwood Sauna</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Chilled Ice Baths (4°C)</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Eucalyptus Steam Rooms</div>
+                                <div class="facility-perk-item"><i class="fa-regular fa-square-check"></i> Relaxation Thermal Lounges</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-divider">
+                <h2>TITAN <span>TESTIMONIALS</span></h2>
+            </div>
+            
+            <div class="testimonials-slider-container">
+                <button class="slider-nav-btn prev" id="sliderPrev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                
+                <div class="testimonials-slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Michael R.">
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"Atlas Gym completely transformed my fitness. The master strength trainers didn't just show me how to lift; they explained the biomechanics. The community is incredibly inspiring and the equipment is top-tier."</p>
+                        <span class="testimonial-author">— Michael R.</span>
+                        <span class="testimonial-role">Member since 2024</span>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" alt="Sarah L.">
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"The Artemis Fit program helped me build functional core strength and athletic tone that I never thought possible. The recovery suite, especially the cold plunge and cedar sauna, is a absolute game changer after heavy leg days."</p>
+                        <span class="testimonial-author">— Sarah L.</span>
+                        <span class="testimonial-role">Member since 2025</span>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="David K.">
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"Finding a gym that has competition Eleiko plates, multiple deadlift platforms, and dumbbells up to 150 lbs is rare. Atlas is a lifter's paradise. It's clean, professional, and everyone is focused on real progress."</p>
+                        <span class="testimonial-author">— David K.</span>
+                        <span class="testimonial-role">Member since 2023</span>
+                    </div>
+                </div>
+
+                <button class="slider-nav-btn next" id="sliderNext">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="slider-pagination">
+                    <div class="slider-dot active" data-slide-index="0"></div>
+                    <div class="slider-dot" data-slide-index="1"></div>
+                    <div class="slider-dot" data-slide-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN SECTION -->
+    <section class="join" id="join">
+        <div class="container">
+            <div class="join-info">
+                <h2>BECOME A TITAN OF STRENGTH</h2>
+                <p>Begin your training phase today. Select your tier, configure your profile details, and instantly generate your VIP access card.</p>
+                
+                <div class="join-perk-list">
+                    <div class="join-perk-item">
+                        <div class="join-perk-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="join-perk-text">
+                            <h4>NO LOCK-IN TERMS</h4>
+                            <p>We believe in our value. Cancel or freeze your membership tier at any time without administrative penalties.</p>
+                        </div>
+                    </div>
+
+                    <div class="join-perk-item">
+                        <div class="join-perk-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="join-perk-text">
+                            <h4>24/7 UNLIMITED ACCESS</h4>
+                            <p>Unlock the gates at any time. Our biometric security door responds to your VIP smartphone pass 24/7.</p>
+                        </div>
+                    </div>
+
+                    <div class="join-perk-item">
+                        <div class="join-perk-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="join-perk-text">
+                            <h4>VIP LOUNGE & RECOVERY ACCESS</h4>
+                            <p>Enjoy private lounges, work desks, and premium muscle recovery baths depending on your choice tier.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi-step Wizard Card -->
+            <div class="wizard-card glass-panel">
+                <div class="wizard-header">
+                    <span class="wizard-title">MEMBERSHIP WIZARD</span>
+                    <div class="wizard-steps-indicator">
+                        <div class="step-indicator-dot active"></div>
+                        <div class="step-indicator-dot"></div>
+                        <div class="step-indicator-dot"></div>
+                    </div>
+                </div>
+
+                <div class="wizard-body">
+                    <!-- Step 1: Select Tier -->
+                    <div class="wizard-step-panel active" data-step="1">
+                        <h4 style="font-size: 0.78rem; font-weight: 700; margin-bottom: 20px; color: var(--text-gray);">STEP 1: SELECT YOUR TIER</h4>
+                        <div class="tier-cards-grid">
+                            <!-- Standard Tier -->
+                            <div class="tier-select-card" data-tier="standard">
+                                <div class="tier-card-left">
+                                    <div class="tier-radio-custom"></div>
+                                    <div class="tier-card-info">
+                                        <h4>ATHLETE STANDARD</h4>
+                                        <p>Standard cardio & strength access</p>
+                                    </div>
+                                </div>
+                                <div class="tier-card-right">
+                                    <div class="tier-price-box">
+                                        <span>$29</span><label>/mo</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Elite Tier (Default Selection) -->
+                            <div class="tier-select-card selected" data-tier="elite">
+                                <div class="tier-popular-tag">RECOMMENDED</div>
+                                <div class="tier-card-left">
+                                    <div class="tier-radio-custom"></div>
+                                    <div class="tier-card-info">
+                                        <h4>OLYMPUS ELITE</h4>
+                                        <p>Full facility access + recovery lounge</p>
+                                    </div>
+                                </div>
+                                <div class="tier-card-right">
+                                    <div class="tier-price-box">
+                                        <span>$59</span><label>/mo</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- VIP Tier -->
+                            <div class="tier-select-card" data-tier="vip">
+                                <div class="tier-card-left">
+                                    <div class="tier-radio-custom"></div>
+                                    <div class="tier-card-info">
+                                        <h4>ZEUS VIP CLUB</h4>
+                                        <p>24/7 VIP keycard + 4 personal coaching sessions</p>
+                                    </div>
+                                </div>
+                                <div class="tier-card-right">
+                                    <div class="tier-price-box">
+                                        <span>$99</span><label>/mo</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: User details -->
+                    <div class="wizard-step-panel" data-step="2">
+                        <h4 style="font-size: 0.78rem; font-weight: 700; margin-bottom: 20px; color: var(--text-gray);">STEP 2: TITAN INFORMATION</h4>
+                        <div class="wizard-form">
+                            <div class="form-error-msg" id="formError">Error message goes here</div>
+                            
+                            <div class="form-group">
+                                <label for="joinName">FULL NAME</label>
+                                <input type="text" id="joinName" placeholder="e.g. Leonidas of Sparta">
+                            </div>
+
+                            <div class="form-group-grid">
+                                <div class="form-group">
+                                    <label for="joinEmail">EMAIL ADDRESS</label>
+                                    <input type="email" id="joinEmail" placeholder="e.g. king@sparta.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="joinPhone">PHONE NUMBER</label>
+                                    <input type="tel" id="joinPhone" placeholder="e.g. +30 697 123 4567">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="joinProgram">PREFERRED TRAINING PROGRAM</label>
+                                <select id="joinProgram">
+                                    <option value="Apollo Burns">Apollo Burns (Cardio / Fat Loss)</option>
+                                    <option value="Heracles Growth">Heracles Growth (Hypertrophy / Power)</option>
+                                    <option value="Artemis Fit">Artemis Fit (Athletic Toning)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Success Confirmation -->
+                    <div class="wizard-step-panel" data-step="3">
+                        <div class="success-card">
+                            <div class="success-badge-wrap">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>TITAN REGISTRATION COMPLETE</h3>
+                            <p>Your details have been successfully processed. Show this digital pass at the front desk to finalize biometric keycard activation.</p>
+
+                            <!-- Success Access Ticket -->
+                            <div class="success-details-ticket">
+                                <div class="ticket-header">
+                                    <span class="ticket-brand"><i class="fa-solid fa-globe"></i> ATLAS PASS</span>
+                                    <span class="ticket-vip-tag" id="ticketVipTag">VIP CLUB</span>
+                                </div>
+                                <div class="ticket-info-row">
+                                    <label>TIER LEVEL</label>
+                                    <span id="successTier">OLYMPUS ELITE</span>
+                                </div>
+                                <div class="ticket-info-row">
+                                    <label>TITAN NAME</label>
+                                    <span id="successName">Leonidas of Sparta</span>
+                                </div>
+                                <div class="ticket-info-row">
+                                    <label>EMAIL</label>
+                                    <span id="successEmail">king@sparta.com</span>
+                                </div>
+                                <div class="ticket-info-row">
+                                    <label>CONTACT PHONE</label>
+                                    <span id="successPhone">+30 697 123 4567</span>
+                                </div>
+                                <div class="ticket-info-row">
+                                    <label>PREFERRED SYSTEM</label>
+                                    <span id="successProgram">Heracles Growth</span>
+                                </div>
+                                <div class="ticket-code-box">
+                                    <div class="ticket-code-label">FRONT DESK VERIFICATION CODE</div>
+                                    <span class="ticket-code-number" id="successCode">ATL-829143</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-footer-nav">
+                    <button class="btn btn-outline" id="wizardPrev" style="display: none;">BACK</button>
+                    <button class="btn btn-solid" id="wizardNext">CONTINUE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & LOCATION SECTION -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div>
+                    <div class="section-divider" style="text-align: left; margin-bottom: 40px;">
+                        <h2 style="padding-left: 0; background: var(--bg-main);">CONTACT <span>US</span></h2>
+                    </div>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h4>OLYMPIC HEADQUARTERS</h4>
+                                <p>123 Olympus Street<br>Athens, Greece 12345</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h4>TELEPHONE ACCESS</h4>
+                                <p>+30 123 456 7890</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h4>ELECTRONIC MAIL</h4>
+                                <p>info@atlasgym.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links-grid">
+                    <a href="https://instagram.com" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="social-btn"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://youtube.com" target="_blank" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Simulated Map Dashboard -->
+            <div class="map-dashboard">
+                <div class="map-radar-panel">
+                    <div class="map-radar-grid"></div>
+                    <div class="map-radar-sweep"></div>
+                    <div class="map-radar-ring map-radar-ring-1"></div>
+                    <div class="map-radar-ring map-radar-ring-2"></div>
+                    <div class="map-radar-ring map-radar-ring-3"></div>
+                    
+                    <!-- Center Pin (Atlas Gym Location) -->
+                    <div class="map-radar-pin" style="top: 48%; left: 48%;">
+                        <span class="map-radar-pin-gym"><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="map-radar-label">ATLAS GYM HQ</div>
+                    </div>
+                </div>
+
+                <div class="map-route-controls">
+                    <h4 style="font-size: 0.68rem; font-weight: 700; color: var(--text-gray); margin-bottom: 12px; letter-spacing: 1.2px;">TITAN NAVIGATOR ROUTE FINDER</h4>
+                    <form class="map-route-form" id="routeForm">
+                        <div class="route-input-group">
+                            <input type="text" id="startLocation" placeholder="Enter your current location (e.g. Athens Center)" required>
+                            <button type="submit" class="btn btn-solid">CALCULATE</button>
+                        </div>
+                        <div class="route-result-box" id="routeResult">
+                            <i class="fa-solid fa-compass route-result-icon" id="routeResultIcon"></i>
+                            <span class="route-result-text" id="routeResultText">Route results will output here...</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer-logo-text">
+                    <span class="main">ATLAS GYM</span>
+                    <span class="sub">Train your strength. Elevate your life.</span>
+                </div>
+            </div>
+            
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#programs">PROGRAMS</a></li>
+                    <li><a href="#facilities">FACILITIES</a></li>
+                    <li><a href="#testimonials">REVIEWS</a></li>
+                    <li><a href="#join">MEMBERSHIP</a></li>
+                </ul>
+            </nav>
+
+            <div class="copyright">
+                &copy; 2026 Atlas Gym. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- DETAILED PROGRAM MODAL CONTAINER -->
+    <div class="modal-overlay" id="programModal">
+        <div class="modal-card">
+            <div class="modal-img-wrap">
+                <div class="modal-img-overlay"></div>
+                <button class="modal-close-btn" id="modalClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <img src="" alt="" id="modalImg">
+                <div class="modal-header-info">
+                    <h3 id="modalTitle">Program Title</h3>
+                    <span id="modalSubtitle">Subspecialty Tagline</span>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <p class="modal-desc" id="modalDesc">Detailed descriptions about training biomechanics go here...</p>
+                
+                <div class="modal-specs-grid">
+                    <div class="modal-spec-item">
+                        <label>INTENSITY COEFFICIENT</label>
+                        <span id="modalSpecIntensity">High</span>
+                    </div>
+                    <div class="modal-spec-item">
+                        <label>DURATION</label>
+                        <span id="modalSpecDuration">45 mins</span>
+                    </div>
+                    <div class="modal-spec-item" style="grid-column: span 2; margin-top: 8px;">
+                        <label>AVAILABLE SESSION SCHEDULES</label>
+                        <span id="modalSpecSchedule">Mon, Wed, Fri at 7:00 AM</span>
+                    </div>
+                    <div class="modal-spec-item" style="grid-column: span 2; margin-top: 8px;">
+                        <label>LEAD SPEC-TRAINER</label>
+                        <span id="modalSpecTrainer">Helena V.</span>
+                    </div>
+                </div>
+
+                <h4 class="modal-perks-title">TITAN REGISTRATION PERKS</h4>
+                <ul class="modal-perks-list" id="modalPerksList">
+                    <!-- Dynamic perks rendered from script.js -->
+                </ul>
+            </div>
+
+            <div class="modal-cta-box">
+                <button class="btn btn-solid" id="modalEnrollBtn" style="font-size: 0.7rem; padding: 12px 24px;">ENROLL IN THIS SYSTEM</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
